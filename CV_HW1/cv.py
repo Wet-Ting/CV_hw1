@@ -1,0 +1,196 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'cv.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(861, 474)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox.setGeometry(QtCore.QRect(20, 30, 321, 191))
+        self.groupBox.setObjectName("groupBox")
+        self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox)
+        self.groupBox_2.setGeometry(QtCore.QRect(150, 40, 141, 121))
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.selectImg = QtWidgets.QComboBox(self.groupBox_2)
+        self.selectImg.setGeometry(QtCore.QRect(30, 51, 81, 21))
+        self.selectImg.setObjectName("selectImg")
+        self.label = QtWidgets.QLabel(self.groupBox_2)
+        self.label.setGeometry(QtCore.QRect(20, 20, 61, 20))
+        self.label.setObjectName("label")
+        self.Extrinsic = QtWidgets.QToolButton(self.groupBox_2)
+        self.Extrinsic.setGeometry(QtCore.QRect(20, 80, 101, 31))
+        self.Extrinsic.setObjectName("Extrinsic")
+        self.Findcorners = QtWidgets.QToolButton(self.groupBox)
+        self.Findcorners.setGeometry(QtCore.QRect(20, 30, 111, 41))
+        self.Findcorners.setObjectName("Findcorners")
+        self.Intrinsic = QtWidgets.QToolButton(self.groupBox)
+        self.Intrinsic.setGeometry(QtCore.QRect(20, 80, 111, 41))
+        self.Intrinsic.setObjectName("Intrinsic")
+        self.Distortion = QtWidgets.QToolButton(self.groupBox)
+        self.Distortion.setGeometry(QtCore.QRect(20, 130, 111, 41))
+        self.Distortion.setObjectName("Distortion")
+        self.groupBox_3 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_3.setGeometry(QtCore.QRect(20, 230, 161, 151))
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.AR = QtWidgets.QToolButton(self.groupBox_3)
+        self.AR.setGeometry(QtCore.QRect(10, 30, 141, 41))
+        self.AR.setObjectName("AR")
+        self.groupBox_5 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_5.setGeometry(QtCore.QRect(190, 230, 151, 151))
+        self.groupBox_5.setObjectName("groupBox_5")
+        self.FindContour = QtWidgets.QToolButton(self.groupBox_5)
+        self.FindContour.setGeometry(QtCore.QRect(10, 30, 131, 41))
+        self.FindContour.setObjectName("FindContour")
+        self.buttonBox = QtWidgets.QDialogButtonBox(self.centralwidget)
+        self.buttonBox.setGeometry(QtCore.QRect(670, 410, 161, 51))
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName("buttonBox")
+        self.groupBox_6 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_6.setGeometry(QtCore.QRect(350, 30, 291, 351))
+        self.groupBox_6.setObjectName("groupBox_6")
+        self.groupBox_7 = QtWidgets.QGroupBox(self.groupBox_6)
+        self.groupBox_7.setGeometry(QtCore.QRect(20, 30, 251, 261))
+        self.groupBox_7.setObjectName("groupBox_7")
+        self.groupBox_8 = QtWidgets.QGroupBox(self.groupBox_7)
+        self.groupBox_8.setGeometry(QtCore.QRect(10, 20, 231, 181))
+        self.groupBox_8.setObjectName("groupBox_8")
+        self.angle = QtWidgets.QTextEdit(self.groupBox_8)
+        self.angle.setGeometry(QtCore.QRect(70, 20, 81, 31))
+        self.angle.setObjectName("angle")
+        self.scale = QtWidgets.QTextEdit(self.groupBox_8)
+        self.scale.setGeometry(QtCore.QRect(70, 60, 81, 31))
+        self.scale.setObjectName("scale")
+        self.tx = QtWidgets.QTextEdit(self.groupBox_8)
+        self.tx.setGeometry(QtCore.QRect(70, 100, 81, 31))
+        self.tx.setObjectName("tx")
+        self.ty = QtWidgets.QTextEdit(self.groupBox_8)
+        self.ty.setGeometry(QtCore.QRect(70, 140, 81, 31))
+        self.ty.setObjectName("ty")
+        self.label_3 = QtWidgets.QLabel(self.groupBox_8)
+        self.label_3.setGeometry(QtCore.QRect(20, 30, 41, 21))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.groupBox_8)
+        self.label_4.setGeometry(QtCore.QRect(20, 70, 41, 21))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.groupBox_8)
+        self.label_5.setGeometry(QtCore.QRect(20, 110, 41, 21))
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.groupBox_8)
+        self.label_6.setGeometry(QtCore.QRect(20, 150, 41, 21))
+        self.label_6.setObjectName("label_6")
+        self.label_11 = QtWidgets.QLabel(self.groupBox_8)
+        self.label_11.setGeometry(QtCore.QRect(170, 30, 41, 21))
+        self.label_11.setObjectName("label_11")
+        self.label_12 = QtWidgets.QLabel(self.groupBox_8)
+        self.label_12.setGeometry(QtCore.QRect(170, 110, 41, 21))
+        self.label_12.setObjectName("label_12")
+        self.label_13 = QtWidgets.QLabel(self.groupBox_8)
+        self.label_13.setGeometry(QtCore.QRect(170, 150, 41, 21))
+        self.label_13.setObjectName("label_13")
+        self.RST = QtWidgets.QToolButton(self.groupBox_7)
+        self.RST.setGeometry(QtCore.QRect(10, 210, 231, 41))
+        self.RST.setObjectName("RST")
+        self.PT = QtWidgets.QToolButton(self.groupBox_6)
+        self.PT.setGeometry(QtCore.QRect(30, 300, 231, 41))
+        self.PT.setObjectName("PT")
+        self.groupBox_9 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_9.setGeometry(QtCore.QRect(660, 30, 181, 351))
+        self.groupBox_9.setObjectName("groupBox_9")
+        self.Imgs = QtWidgets.QToolButton(self.groupBox_9)
+        self.Imgs.setGeometry(QtCore.QRect(10, 30, 151, 41))
+        self.Imgs.setObjectName("Imgs")
+        self.Hyper = QtWidgets.QToolButton(self.groupBox_9)
+        self.Hyper.setGeometry(QtCore.QRect(10, 80, 151, 41))
+        self.Hyper.setObjectName("Hyper")
+        self.Train = QtWidgets.QToolButton(self.groupBox_9)
+        self.Train.setGeometry(QtCore.QRect(10, 130, 151, 41))
+        self.Train.setObjectName("Train")
+        self.Result = QtWidgets.QToolButton(self.groupBox_9)
+        self.Result.setGeometry(QtCore.QRect(10, 180, 151, 41))
+        self.Result.setObjectName("Result")
+        self.Inf = QtWidgets.QToolButton(self.groupBox_9)
+        self.Inf.setGeometry(QtCore.QRect(10, 290, 151, 41))
+        self.Inf.setObjectName("Inf")
+        self.label_14 = QtWidgets.QLabel(self.groupBox_9)
+        self.label_14.setGeometry(QtCore.QRect(10, 230, 91, 21))
+        self.label_14.setObjectName("label_14")
+        self.Test_idx = QtWidgets.QTextEdit(self.groupBox_9)
+        self.Test_idx.setGeometry(QtCore.QRect(10, 250, 151, 31))
+        self.Test_idx.setObjectName("Test_idx")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.groupBox.setTitle(_translate("MainWindow", "1. Calibration"))
+        self.groupBox_2.setTitle(_translate("MainWindow", "1.3 Extrinsic"))
+        self.label.setText(_translate("MainWindow", "Select image"))
+        self.Extrinsic.setText(_translate("MainWindow", "1.3 Extrinsic"))
+        self.Findcorners.setText(_translate("MainWindow", "1.1 Find Corners"))
+        self.Intrinsic.setText(_translate("MainWindow", "1.2 Intrinsic"))
+        self.Distortion.setText(_translate("MainWindow", "1.4 Distortion"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "2. Augmented Reality"))
+        self.AR.setText(_translate("MainWindow", "2.1 Augmented Reality"))
+        self.groupBox_5.setTitle(_translate("MainWindow", "4. Find Contour"))
+        self.FindContour.setText(_translate("MainWindow", "4.1 Find Contour"))
+        self.groupBox_6.setTitle(_translate("MainWindow", "3. Image Transformation"))
+        self.groupBox_7.setTitle(_translate("MainWindow", "3.1 Rot, scale, Translate"))
+        self.groupBox_8.setTitle(_translate("MainWindow", "Parameters"))
+        self.angle.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'PMingLiU\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">0</p></body></html>"))
+        self.scale.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'PMingLiU\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1</p></body></html>"))
+        self.tx.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'PMingLiU\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">0</p></body></html>"))
+        self.ty.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'PMingLiU\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">0</p></body></html>"))
+        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Angle:</span></p></body></html>"))
+        self.label_4.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Scale:</span></p></body></html>"))
+        self.label_5.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Tx:</span></p></body></html>"))
+        self.label_6.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Ty:</span></p></body></html>"))
+        self.label_11.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">deg</span></p></body></html>"))
+        self.label_12.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">pixel</span></p></body></html>"))
+        self.label_13.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">pixel</span></p></body></html>"))
+        self.RST.setText(_translate("MainWindow", "3.1 Rotation, scaling, translation"))
+        self.PT.setText(_translate("MainWindow", "3.2 Perspective Transform"))
+        self.groupBox_9.setTitle(_translate("MainWindow", "Train Cifar-10 Classifier"))
+        self.Imgs.setText(_translate("MainWindow", "5.1 Show Train Images"))
+        self.Hyper.setText(_translate("MainWindow", "5.2 Show Hyperparameters"))
+        self.Train.setText(_translate("MainWindow", "5.3 Train 1 Epoch"))
+        self.Result.setText(_translate("MainWindow", "5.4 Show Training Result"))
+        self.Inf.setText(_translate("MainWindow", "5.5 Inference"))
+        self.label_14.setText(_translate("MainWindow", "<html><head/><body><p>Test Image Index:</p></body></html>"))
+        self.Test_idx.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'PMingLiU\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">(0~9999)</p></body></html>"))
